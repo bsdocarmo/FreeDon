@@ -10,9 +10,9 @@ public class Product {
     private String name;
     private String description;
     private int idUser;
-    private short status;
+    private int status;
 
-    public Product(int id, String name, String description, int idUser, short status) {
+    public Product(int id, String name, String description, int idUser, int status) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -52,11 +52,11 @@ public class Product {
         this.idUser = idUser;
     }
 
-    public short getStatus() {
+    public int getStatus() {
         return status;
     }
 
-    public void setStatus(short status) {
+    public void setStatus(int status) {
         this.status = status;
     }
 }
