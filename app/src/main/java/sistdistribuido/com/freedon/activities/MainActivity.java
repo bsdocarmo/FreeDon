@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-import sistdistribuido.com.freedon.Adapters.ProductAdapter;
+import sistdistribuido.com.freedon.adapters.ProductAdapter;
 import sistdistribuido.com.freedon.R;
 import sistdistribuido.com.freedon.models.Product;
 

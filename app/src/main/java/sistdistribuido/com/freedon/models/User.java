@@ -1,5 +1,7 @@
 package sistdistribuido.com.freedon.models;
 
+import java.util.Date;
+
 /**
  * Created by Bruno on 03/12/2017.
  */
@@ -10,9 +12,9 @@ public class User {
     private String name;
     private String email;
     private String password;
-    private String profileImage;
+    private byte[] profileImage;
     private String description;
-    private String birthDate;
+    private Date birthDate;
     private String phoneNumber;
     private int idCountry;
     private int idState;
@@ -21,7 +23,7 @@ public class User {
     private int houseNumber;
     private int additionalInfo;
 
-    public User(int id, String name, String email, String password, String profileImage, String description, String birthDate, String phoneNumber, int idCountry, int idState, int idDistrict, int idStreet, int houseNumber, int additionalInfo) {
+    public User(int id, String name, String email, String password, byte[] profileImage, String description, Date birthDate, String phoneNumber, int idCountry, int idState, int idDistrict, int idStreet, int houseNumber, int additionalInfo) {
 
         this.id = id;
         this.name = name;
@@ -37,6 +39,9 @@ public class User {
         this.idStreet = idStreet;
         this.houseNumber = houseNumber;
         this.additionalInfo = additionalInfo;
+    }
+
+    public User() {
     }
 
     public int getId() {
@@ -71,11 +76,11 @@ public class User {
         this.password = password;
     }
 
-    public String getProfileImage() {
+    public byte[] getProfileImage() {
         return profileImage;
     }
 
-    public void setProfileImage(String profileImage) {
+    public void setProfileImage(byte[] profileImage) {
         this.profileImage = profileImage;
     }
 
@@ -87,11 +92,11 @@ public class User {
         this.description = description;
     }
 
-    public String getBirthDate() {
+    public Date getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(String birthDate) {
+    public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
 

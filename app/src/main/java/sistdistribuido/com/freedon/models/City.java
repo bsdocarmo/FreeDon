@@ -14,6 +14,9 @@ public class City {
         this.cityName = cityName;
     }
 
+    public City(){
+    }
+
     public int getId() {
         return id;
     }

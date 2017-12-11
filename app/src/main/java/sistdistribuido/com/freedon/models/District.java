@@ -14,6 +14,9 @@ public class District {
         this.districtName = districtName;
     }
 
+    public District() {
+    }
+
     public int getId() {
         return id;
     }

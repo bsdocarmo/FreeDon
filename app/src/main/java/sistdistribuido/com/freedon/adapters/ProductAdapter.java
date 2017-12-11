@@ -1,4 +1,4 @@
-package sistdistribuido.com.freedon.Adapters;
+package sistdistribuido.com.freedon.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -33,9 +33,7 @@ public class ProductAdapter extends RecyclerView.Adapter {
         View view = LayoutInflater.from(context).inflate(R.layout.item_product, parent,
                 false);
 
-        ProductHolder productHolder = new ProductHolder(view);
-
-        return productHolder;
+        return new ProductHolder(view);
     }
 
     @Override
